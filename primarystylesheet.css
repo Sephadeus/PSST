@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,800;0,900;1,100;1,200;1,400;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    /* outline: 1px solid red; */
+}
+
+:root {
+    --main-color-light: rgb(234, 234, 234);
+    --main-color-dark: rgb(33, 33, 33);
+    --main-font-color-light: rgb(234, 234, 234);
+    --main-font-color-dark: rgb(33, 33, 33);
+    --main-font-themed: #f5f102;
+    --main-gradient: linear-gradient(to right, rgb(1, 149, 1) 30%, var(--secondary-color) 50%);
+    --secondary-color: #321c00;
+    --tertiary-color: #0f5b01;
+    --tertiary-color-alt1: #1f9b00;
+    --custom-fonts: 'Anton';
+    --fallback-font-list: 'Poppins', 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fallback-font-list);
+    max-width: 100%;
+}
+
+/* Custom Framework*/
+
+/* Margins/Padding */
+
+.ma {
+    margin: auto;
+}
+
+.p10p {
+    padding: 10px;
+}
+
+.p1e {
+    padding: 1em;
+}
+
+.p1re {
+    padding: 1rem;
+}
+
+.p05e {
+    padding: .5em;
+}
+
+/*Links*/
+
+.link {
+    text-decoration: none;
+    margin: 1em;
+    color: var(--main-font-color-light);
+    font-weight: bolder;
+}
+
+.link-hover {
+transition: .35s;
+}
+
+.link-hover:hover {
+    color: var(--main-font-themed);
+}
+
+.link-hover:has(.link-hover) :not(:hover) {
+    opacity: .8;
+}
+
+.nav-link-hover:hover {
+    padding: 30px;
+    background-color: #2f5b00;
+    border-radius: 10px;
+}
+
+/* Display */
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Alignment */
+
+.tx-c {
+    text-align: center;
+}
+
+.tx-l {
+    text-align: left;
+}
+
+.tx-r {
+    text-align: right;
+}
+
+.tx-j {
+    text-align: justify;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-se {
+    justify-content: space-evenly;
+}
+
+.jc-l {
+    justify-content: left;
+}
+
+.jc-r {
+    justify-content: right;
+}
+
+.al-it-c {
+    align-items: center;
+}
+
+.al-it-t {
+    align-items: top;
+}
+
+.al-it-l {
+    align-items: left;
+}
+
+.al-it-r {
+    align-items: right;
+}
+
+.al-co-c {
+    align-content: center;
+}
+
+.pl-it-c {
+    place-items: center;
+}
+
+.pl-co-c {
+    place-content: center;
+}
+
+/* Flex Flows */
+
+.flowrow {
+    flex-flow: row;
+}
+
+.flowcol {
+    flex-flow: column;
+}
+
+.flowrowwrap {
+    flex-flow: row wrap;
+}
+
+.flowcolwrap {
+    flex-flow: column wrap;
+}
+
+/* Border Radius */
+
+.brad10 {
+    border-radius: 10px;
+}
+
+.brad20 {
+    border-radius: 20px;
+}
+
+.brad30 {
+    border-radius: 30px;
+}
+
+.brad-circ {
+    border-radius: 50%;
+}
+
+/* Box Shadow */
+
+.bx-shad-1-dark {
+    box-shadow: 1px 1px 3px 0px #333;
+}
+
+.bx-shad-0-light {
+    box-shadow: 0px 0px 15px 0px #999;
+}
+
+/* Text Shadow */
+
+.tx-shad-light {
+    text-shadow: 1px 1px 1px black,
+    2px 2px 2px gray;
+}
+
+/* Dimensions */
+
+.max-w {
+    max-width: 100%;
+}
+
+.fullvw {
+    max-width: 100dvw;
+    max-width: 100vw;
+}
+
+.minfullvh{
+    min-height: calc(100dvh - 200px);
+    min-height: calc(100vh - 200px);
+}
+
+/* Custom Classes */
+

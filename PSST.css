@@ -224,6 +224,10 @@ transition: .35s;
     max-width: 100%;
 }
 
+.w100 {
+    width: 100%;
+}
+
 .fullvw {
     max-width: 100dvw;
     max-width: 100vw;
